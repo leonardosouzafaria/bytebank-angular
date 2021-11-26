@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NovaTransferenciaComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
+  }
+
+  valor: number |undefined;
+  destino: number | undefined;
+
+  transferir() {
+    console.log("Solicitada nova transferencia.")
+    console.log("Valor: ", this.valor);
+    console.log("Destino: ", this.destino)
   }
 
 }
